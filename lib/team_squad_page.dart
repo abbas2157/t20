@@ -177,12 +177,12 @@ class PlayerCard extends StatelessWidget {
             child: Column(
               children: [
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(9.0),
                   child: Text(
                     player.name,
                     style: const TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 16.0,
+                        fontSize: 11.0,
                         color: Colors.white),
                   ),
                 ),

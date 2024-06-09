@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 class Team {
   final String name;
   final String imageUrl;
@@ -13,7 +11,8 @@ class Team {
 
   factory Team.fromJson(Map<String, dynamic> json) {
     List<dynamic> squadList = json['squad'];
-    List<Player> players = squadList.map((playerJson) => Player.fromJson(playerJson)).toList();
+    List<Player> players =
+        squadList.map((playerJson) => Player.fromJson(playerJson)).toList();
 
     return Team(
       name: json['team'],
